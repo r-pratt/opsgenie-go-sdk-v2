@@ -140,7 +140,7 @@ type UpdateTeamRequest struct {
 	Id          string   `json:"id,omitempty"`
 	Description string   `json:"description,omitempty"`
 	Name        string   `json:"name,omitempty"`
-	Members     []Member `json:"members,omitempty"`
+	Members     []Member `json:"members"`
 }
 
 func (r *UpdateTeamRequest) Validate() error {
